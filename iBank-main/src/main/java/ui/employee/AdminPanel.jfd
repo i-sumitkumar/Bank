@@ -1,0 +1,45 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:179:p, comp label1:::p:50:p, space s:::p, comp employeeName:::p:240:p}, seq l {space :p:137:p, par l:::p {comp button1::::180:x, comp button2::::180:x, comp button3::l::180:x}}}, space ::175:x}, seq t {space :0:532:x, comp button4:::p::p, space :p:32:p}}"
+			"$verticalGroup": "par l {seq l {space :p:27:p, par l {comp label1:::p:32:p, comp employeeName:::p:30:p}, space u:::p, comp button4:::p::p, space :p:5:p, comp button1:::p:58:p, space u:::p, comp button2:::p:57:p, space s:::p, comp button3:::p:54:p, space ::287:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Hello"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Check Status"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "checkStatus", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Refill Cash"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "startRefillCash", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "Retrieve Cash"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "startRetrieveCash", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "Logout"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "logout", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "employeeName"
+				"text": "text"
+				"horizontalAlignment": 2
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 530, 480 )
+		} )
+	}
+}

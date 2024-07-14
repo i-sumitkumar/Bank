@@ -1,0 +1,65 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:145:p, comp label1:::p:102:p}, seq l {space :p:85:p, comp layeredPane1:::p:219:p}}, space ::96:x}}"
+			"$verticalGroup": "par l {seq l {space :p:25:p, comp label1:::p:47:p, space :::p, comp layeredPane1:::p:161:p, space ::61:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Authentication"
+			} )
+			add( new FormContainer( "javax.swing.JLayeredPane", new FormLayoutManager( class javax.swing.JLayeredPane ) ) {
+				name: "layeredPane1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "User"
+				}, new FormLayoutConstraints( null ) {
+					"x": 15
+					"y": 25
+					"width": 65
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "PIN"
+				}, new FormLayoutConstraints( null ) {
+					"x": 20
+					"y": 60
+					"width": 25
+					"height": 20
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "userField"
+				}, new FormLayoutConstraints( null ) {
+					"x": 65
+					"y": 20
+					"width": 80
+					"height": 30
+				} )
+				add( new FormComponent( "javax.swing.JPasswordField" ) {
+					name: "pinField"
+				}, new FormLayoutConstraints( null ) {
+					"x": 65
+					"y": 55
+					"width": 80
+					"height": 30
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "login"
+					"text": "OK"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "performLogin", true ) )
+				}, new FormLayoutConstraints( null ) {
+					"x": 60
+					"y": 105
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

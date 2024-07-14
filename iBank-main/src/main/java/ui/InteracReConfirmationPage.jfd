@@ -1,0 +1,54 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:180:p, comp label1:::p::p}, seq l {space :p:48:p, comp button1:::p::p, space :p:91:p, comp button2:::p::p}, seq l {space :p:23:p, par l {seq {comp label4:::p::p, space :::p, comp amountValue:::p:73:p}, seq {comp label2:::p::p, space :::p, comp Customer:::p::p}, seq l {comp label6:::p::p, space :::p, comp targetUser:::p:134:p}}}}, space ::91:x}}"
+			"$verticalGroup": "par l {seq l {space :p:19:p, comp label1:::p::p, space :::p, par b {comp label2::b:p::p, comp Customer::b:::x}, space :::p, par b {comp label4::b:p::p, comp amountValue::b:p::p}, space :::p, par b {comp label6::b:p::p, comp targetUser::b:p::p}, space :p:28:p, par b {comp button1::b:p::p, comp button2::b:p::p}, space ::133:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Interac"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Hi"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Send"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "confirmSend", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Cancel"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "returnMenu", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Customer"
+				"text": "customerName"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Are you sure you want to send $"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "amountValue"
+				"text": "*****"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "to"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "targetUser"
+				"text": "targetUserName"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

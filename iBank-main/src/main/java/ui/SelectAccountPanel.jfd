@@ -1,0 +1,39 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {par t {seq t {space :p:121:p, comp title:::p:128:p, space :0:0:x}, seq l {space :p:30:p, par l {seq {comp returnMenu:::p:109:p, space :0:241:x}, seq {par l:::p {comp label2::::162:x, comp button1::::162:x}, space ::26:x, comp button2:::p:162:p}}}}, space :p:20:p}}"
+			"$verticalGroup": "par l {seq l {space :p:24:p, comp title:::p:27:p, space :p:37:p, comp label2:::p:29:p, space s:::p, par b {comp button1::b:p:84:p, comp button2::b:p:84:p}, space ::26:x, comp returnMenu:::p:35:p, space :p:20:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "title"
+				"text": "Check Balance"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Select Account:"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Checking"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "selectChecking", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Savings"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "selectSavings", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "returnMenu"
+				"text": "Return to Menu"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "returnMenu", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

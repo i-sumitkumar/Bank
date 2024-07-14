@@ -1,0 +1,42 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :p:71:p, par t:::p {seq {comp label3:::p:130:p, space s:::p, comp balanceAmount:::p:91:p, space :p:72:p}, seq t {comp label1:::p:150:p, space :p:115:p}, seq l {comp label2:::p:63:p, space s:::p, comp accountNumber:::p:127:p}, comp returnMenu::l:p:109:p}, space ::18:x}}"
+			"$verticalGroup": "par l {seq l {space :p:29:p, comp label1:::p:31:p, space :p:38:p, par b {comp label2::b:p:28:p, comp accountNumber::b:::x}, space :p:27:p, par b {comp label3::b::45:x, comp balanceAmount::b:p:45:p}, space :p:30:p, comp returnMenu:::p:35:p, space ::35:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Checking Balance"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Account "
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Your balance is"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 196608, 5, false )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "returnMenu"
+				"text": "Return to Menu"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "returnMenu", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "balanceAmount"
+				"text": "##.### CAD"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "accountNumber"
+				"text": "XX-XXXX-XX"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

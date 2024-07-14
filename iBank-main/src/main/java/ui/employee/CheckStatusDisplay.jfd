@@ -1,0 +1,65 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :p:33:p, comp button2:::p::p, space :41:471:x}, seq l {space :p:49:p, par l {seq l {par l {comp twentyIcon::l:p:84:p, comp tenIcon::l:p:84:p, comp fiftyIcon::l:p:84:p, comp hundredIcon::l:p:84:p}, space :p:199:p, par l:::p {comp amountHundreds::::100:x, comp amountFifties::::100:x, comp amountTens::::100:x, comp amountTwenties::::100:x}, space ::218:x}, seq l {comp label2:::::x, space :p:236:p}}}}"
+			"$verticalGroup": "par l {seq l {space :p:28:p, comp label2:::p:25:p, space u:::p, par b {comp tenIcon::b:p:50:p, comp amountTens::b:p::p}, space u:::p, par l {comp twentyIcon:::p:50:p, seq l {space :10:10:p, comp amountTwenties:::p::p}}, space s:::p, par l {comp fiftyIcon:::p:50:p, seq l {space :11:11:p, comp amountFifties:::p::p}}, space s:::p, par l {comp hundredIcon:::p:50:p, seq l {space :10:10:p, comp amountHundreds:::p::p}}, space :p:89:p, comp button2:::p::p, space :p:33:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "tenIcon"
+				"text": "text"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/10.jpeg" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "amountTens"
+				"editable": false
+				"text": "0"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Return to Menu"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "returnMenu", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "twentyIcon"
+				"text": "text"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/20.jpeg" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "amountTwenties"
+				"editable": false
+				"text": "0"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "fiftyIcon"
+				"text": "text"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/50.jpeg" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "amountFifties"
+				"editable": false
+				"text": "0"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "hundredIcon"
+				"text": "text"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/100.jpeg" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "amountHundreds"
+				"editable": false
+				"text": "0"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Check Cash Inventory"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 520, 460 )
+		} )
+	}
+}

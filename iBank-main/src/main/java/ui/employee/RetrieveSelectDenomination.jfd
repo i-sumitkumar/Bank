@@ -1,0 +1,127 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :p:33:p, comp button2:::p::p, space :::x, comp button1:::p:97:p, space :p:41:p}, seq l {space :p:49:p, par l {seq l {par l {seq l {comp twentyIcon:::p:84:p, space :18:18:p, comp plus20:::p:25:p, space :6:6:p, comp numberTwenties:::p:50:p, space :6:6:p, comp minus20:::p:25:p}, seq l {comp tenIcon:::p:84:p, space s:::p, comp plus10:::p:25:p, space :::p, comp numberTens:::p:50:p, space :::p, comp minus10:::p:25:p}, seq l {comp fiftyIcon:::p:84:p, space :18:18:p, comp plusFifty:::p:25:p, space :6:6:p, comp numberFifties:::p:50:p, space :6:6:p, comp minusFifty:::p:25:p}, seq l {comp hundredIcon:::p:84:p, space :18:18:p, comp plusHundred:::p:25:p, space :6:6:p, comp numberHundreds:::p:50:p, space :6:6:p, comp minusHundred:::p:25:p}}, space :p:69:p, par l:::p {comp totalAmount::::100:x, comp amountHundreds::::100:x, comp amountFifties::::100:x, comp amountTens::::100:x, comp amountTwenties::::100:x}, space ::218:x}, seq l {par t {comp label2::l:::x, seq t {space :p:73:p, comp label1:::p:64:p}}, space :p:236:p}}}}"
+			"$verticalGroup": "par l {seq l {space :p:28:p, comp label2:::p:25:p, space u:::p, par b {comp tenIcon::b:p:50:p, comp plus10::b:p::p, comp numberTens::b:p::p, comp minus10::b:p::p, comp amountTens::b:p::p}, space u:::p, par l {comp twentyIcon:::p:50:p, seq l {space :10:10:p, par l {comp plus20:::p::p, comp numberTwenties:::p::p, comp minus20:::p::p, comp amountTwenties:::p::p}}}, space s:::p, par l {comp fiftyIcon:::p:50:p, seq l {space :10:10:p, par l {comp plusFifty:::p::p, comp numberFifties:::p::p, par b {comp minusFifty::b:p::p, comp amountFifties::b:p::p}}}}, space s:::p, par l {comp hundredIcon:::p:50:p, seq l {space :10:10:p, par l {comp plusHundred:::p::p, comp numberHundreds:::p::p, par b {comp minusHundred::b:p::p, comp amountHundreds::b:p::p}}}}, space s:::p, par b {comp totalAmount::b:p::p, comp label1::b:p:30:p}, space :p:36:p, par l {comp button1::t:p::p, comp button2::t:p::p}, space :p:33:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "tenIcon"
+				"text": "text"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/10.jpeg" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "numberTens"
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "numberTensKeyReleased", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "plus10"
+				"text": "+"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "minus10"
+				"text": "-"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "amountTens"
+				"editable": false
+				"text": "0"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "OK"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "retrieveCash", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Return to Menu"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "returnMenu", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "twentyIcon"
+				"text": "text"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/20.jpeg" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "plus20"
+				"text": "+"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "numberTwenties"
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "numberTwentiesKeyReleased", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "minus20"
+				"text": "-"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "amountTwenties"
+				"editable": false
+				"text": "0"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "fiftyIcon"
+				"text": "text"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/50.jpeg" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "plusFifty"
+				"text": "+"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "numberFifties"
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "numberFiftiesKeyReleased", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "minusFifty"
+				"text": "-"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "amountFifties"
+				"editable": false
+				"text": "0"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "hundredIcon"
+				"text": "text"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/100.jpeg" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "plusHundred"
+				"text": "+"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "numberHundreds"
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "numberHundredsKeyReleased", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "minusHundred"
+				"text": "-"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "amountHundreds"
+				"editable": false
+				"text": "0"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "totalAmount"
+				"editable": false
+				"text": "0"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "TOTAL:"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Select denomination:"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 520, 460 )
+		} )
+	}
+}

@@ -1,0 +1,56 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:176:p, comp label1:::p:49:p, space :::p, comp customerName:::p:117:p}, seq l {space :p:137:p, par l:::p {comp button1::::180:x, comp button2::::180:x, comp button3::l::180:x, comp button5::::180:x, comp button6::l::180:x}}}, space ::314:x}, seq t {space :0:532:x, comp button4:::p::p, space :p:32:p}}"
+			"$verticalGroup": "par l {seq l {space :p:29:p, par b {comp label1::b:p:32:p, comp customerName::b:p:24:p}, space :p:6:p, comp button4:::p::p, space :p:5:p, comp button1:::p:58:p, space u:::p, comp button2:::p:57:p, space s:::p, comp button3:::p:54:p, space s:::p, comp button5:::p:54:p, space s:::p, comp button6:::p:55:p, space ::146:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Hello"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Check Balance"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "startCheckBalance", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Withdraw"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "startWithDraw", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "Deposit"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "startDeposit", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "Logout"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "logout", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button5"
+				"text": "Transfer"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "startTransfer", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "startTransfer", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button6"
+				"text": "Send Money"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "startSendMoney", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "customerName"
+				"text": "text"
+				"horizontalAlignment": 2
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 55, 5 )
+			"size": new java.awt.Dimension( 530, 480 )
+		} )
+	}
+}
